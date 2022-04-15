@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %} Base {% endblock %}</title>
+</head>
+{% block body %}
+<body>
+	<ul>
+	{% for post in all_posts_list %}
+		<li>{{post}}</li>
+	{% endfor %}
+	</ul>
+</body>
+{% endblock %}
+</html>
